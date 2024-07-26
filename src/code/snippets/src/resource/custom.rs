@@ -1,8 +1,6 @@
 use i3m::asset::io::ResourceIo;
 use i3m::asset::loader::LoaderPayload;
-use i3m::asset::manager::ResourceManager;
 use i3m::asset::state::LoadError;
-use i3m::core::futures::executor::block_on;
 use i3m::plugin::{Plugin, PluginRegistrationContext};
 use i3m::{
     asset::{
@@ -11,7 +9,6 @@ use i3m::{
     },
     core::{
         io::{self},
-        parking_lot::Mutex,
         reflect::prelude::*,
         type_traits::prelude::*,
         uuid::Uuid,
