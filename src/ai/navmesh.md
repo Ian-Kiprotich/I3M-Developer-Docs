@@ -14,7 +14,7 @@ There are three major ways of creating navigational meshes: manual, automatic, f
 
 ### Using the editor
 
-Navigational meshes can be created and edited in the FyroxEd. At first, create a "Navigational Mesh" node, select it and
+Navigational meshes can be created and edited in the I3M. At first, create a "Navigational Mesh" node, select it and
 switch to "navmesh" interaction mode:
 
 ![navmesh](./navmesh.png)

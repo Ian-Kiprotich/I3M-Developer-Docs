@@ -1008,7 +1008,7 @@ dependencies = [
 [[package]]
 name = "i3m"
 version = "0.33.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "i3m-impl",
 ]
@@ -1016,7 +1016,7 @@ dependencies = [
 [[package]]
 name = "i3m-animation"
 version = "0.1.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1028,7 +1028,7 @@ dependencies = [
 [[package]]
 name = "i3m-core"
 version = "0.27.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "android-activity",
  "arrayvec",
@@ -1039,7 +1039,7 @@ dependencies = [
  "futures",
  "fxhash",
  "i3m-core-derive",
- "i3m-math 0.1.0 (git+https://github.com/IThreeM/I3M-Engine-Core)",
+ "i3m-math 0.1.0 (git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git)",
  "instant",
  "js-sys",
  "lazy_static",
@@ -1060,7 +1060,7 @@ dependencies = [
 [[package]]
 name = "i3m-core-derive"
 version = "0.22.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "convert_case",
  "darling",
@@ -1073,7 +1073,7 @@ dependencies = [
 [[package]]
 name = "i3m-graph"
 version = "0.1.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1083,7 +1083,7 @@ dependencies = [
 [[package]]
 name = "i3m-impl"
 version = "0.33.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "base64",
  "bitflags 2.5.0",
@@ -1140,7 +1140,7 @@ dependencies = [
 [[package]]
 name = "i3m-math"
 version = "0.1.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "arrayvec",
  "nalgebra 0.32.5",
@@ -1152,7 +1152,7 @@ dependencies = [
 [[package]]
 name = "i3m-resource"
 version = "0.11.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1165,7 +1165,7 @@ dependencies = [
 [[package]]
 name = "i3m-sound"
 version = "0.34.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "i3m-core",
  "i3m-resource",
@@ -1182,7 +1182,7 @@ dependencies = [
 [[package]]
 name = "i3m-ui"
 version = "0.24.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "copypasta",
  "fontdue",
@@ -1202,7 +1202,7 @@ dependencies = [
 [[package]]
 name = "i3m_engine_core_base"
 version = "0.20.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [
  "cargo_metadata",
  "i3m",

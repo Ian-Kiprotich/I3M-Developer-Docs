@@ -1,6 +1,6 @@
 IThreeM Developer Docs Book
 
-Practical reference and user guides for [Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [FyroxEd](https://github.com/IThreeM/I3M-Engine-Core/tree/master/editor).
+Practical reference and user guides for [Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [I3M](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/tree/master/editor).
 
 > ⚠️ Tip: If you want to start using the engine as fast as possible - read this [chapter](./beginning/scripting.md).
 

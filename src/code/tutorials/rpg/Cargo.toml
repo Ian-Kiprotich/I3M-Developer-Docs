@@ -4,12 +4,12 @@ members = ["editor", "executor", "executor-wasm", "executor-android", "game"]
 resolver = "2"
 
 [workspace.dependencies.i3m]
-git = "https://github.com/IThreeM/I3M-Engine-Core"
-rev = "2396589822b69a672cc0215d94dc6c5c4ba3b217"
+git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git"
+rev = "ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
 
 [workspace.dependencies.i3m_engine_core_base]
-git = "https://github.com/IThreeM/I3M-Engine-Core"
-rev = "2396589822b69a672cc0215d94dc6c5c4ba3b217"
+git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git"
+rev = "ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
 
 # Optimize the engine in debug builds, but leave project's code non-optimized.
 # By using this technique, you can still debug you code, but engine will be fully

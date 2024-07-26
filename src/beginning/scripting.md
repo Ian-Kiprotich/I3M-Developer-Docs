@@ -49,8 +49,8 @@ Run the following commands to start using the editor as quickly as possible.
 
 ```sh
 cargo install i3m-template
-i3m-template init --name fyrox_test --style 2d
-cd fyrox_test
+i3m-template init --name i3m_test --style 2d
+cd i3m_test
 cargo run --package editor --release
 ```
 
@@ -99,7 +99,7 @@ otherwise you won't see a thing. Read the next chapter to learn how to use the e
 
 Due to the nature of the software development, some bugs will inevitably sneak into the major releases, due to this, 
 you may want to use the latest engine version from the repository on GitHub, since it is the most likely to have bugs fixed
-(you can also contribute by fixing any bugs you find or at least, by [filing an issue](https://github.com/IThreeM/I3M-Engine-Core/issues)).
+(you can also contribute by fixing any bugs you find or at least, by [filing an issue](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/issues)).
 
 ### Automatic
 
@@ -123,7 +123,7 @@ Engine version can also be updated manually. The first step to take is to instal
 with a single `cargo` command:
 
 ```shell
-cargo install i3m-template --force --git https://github.com/IThreeM/I3M-Engine-Core
+cargo install i3m-template --force --git ssh://git@github.com/IThreeM/I3M-Engine-Core.git
 ```
 
 This will ensure you're using the latest project/script template generator, which is important, since old versions
@@ -135,7 +135,7 @@ open `game/Cargo.toml` and change the `i3m` dependency to the following:
 
 ```toml
 [dependencies]
-i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
+i3m = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git" }
 ```
 
 Do the same for `executor/Cargo.toml`. The `editor` has two dependencies we need to change: `i3m` and `i3m_engine_core_base`.
@@ -143,8 +143,8 @@ Open the `editor/Cargo.toml` and set both dependencies to the following:
 
 ```toml
 [dependencies]
-i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
-i3m_engine_core_base = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
+i3m = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git" }
+i3m_engine_core_base = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git" }
 ```
 
 Now your game will use the latest engine and editor, but beware - new commits could bring some API breaks. You can avoid these by 
@@ -152,8 +152,8 @@ specifying a particular commit, just add `rev = "desired_commit_hash"` to every 
 
 ```toml
 [dependencies]
-i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
-i3m_engine_core_base = { git = "https://github.com/IThreeM/I3M-Engine-Core", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
+i3m = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
+i3m_engine_core_base = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
 ```
 
 To bring a local git repository of the engine to being up-to-date, just call `cargo update` at the root of the project's

@@ -1,6 +1,6 @@
-# FyroxEd Overview
+# I3M Overview
 
-FyroxEd - is the native editor of I3M, it is made with one purpose - to be an integrated game development environment
+I3M - is the native editor of I3M, it is made with one purpose - to be an integrated game development environment
 that helps you build your game from start to finish with relatively low effort.
 
 You'll be spending a lot of time in the editor, so you should get familiar with it and learn how to use its basic functionalities.
@@ -30,7 +30,7 @@ etc.)
 
 ## Creating or loading a Scene
 
-FyroxEd works with scenes - a scene is a container for game entities, you can create and edit one scene at a time. You must have a
+I3M works with scenes - a scene is a container for game entities, you can create and edit one scene at a time. You must have a
 scene loaded to begin working with the editor. To create a scene go to `File -> New Scene`.
 
 To load an existing scene, go to `File -> Load` and select the desired scene through the file browser. Recently opened
@@ -59,7 +59,7 @@ from.
 
 ## Undoing and redoing
 
-FyroxEd remembers your actions and allows you to undo and redo the changes done by these. You can undo or redo changes by either
+I3M remembers your actions and allows you to undo and redo the changes done by these. You can undo or redo changes by either
 going to `Edit -> Undo/Redo` or through the usual shortcuts: `Ctrl+Z` - to undo, `Ctrl+Y` - to redo.
 
 ## Controls

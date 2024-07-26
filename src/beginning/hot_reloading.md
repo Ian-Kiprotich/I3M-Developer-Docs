@@ -20,7 +20,7 @@ command:
 RUSTFLAGS="-C prefer-dynamic=yes" cargo build --package game_dylib --no-default-features --features="dylib-engine" --profile dev-hot-reload
 ```
 
-This command will compile the engine DLL (`fyrox_dylib.dll/so`) and the plugin DLL (`game_dylib.dll/so`). Please note the
+This command will compile the engine DLL (`i3m_dylib.dll/so`) and the plugin DLL (`game_dylib.dll/so`). Please note the
 mandatory environment variable `RUSTFLAGS="-C prefer-dynamic=yes"`. It forces the compiler to link standard library 
 dynamically. It is very important, because if not set, the standard library will be duplicated in game plugin and engine,
 which will lead to subtle bugs.
@@ -53,7 +53,7 @@ be useful if you're experiencing some issues with hot reloading (see next sectio
 
 CHR is very new and experimental feature of the engine, it is based on wildly unsafe functionality which could result
 in memory corruption, subtle bugs, etc. If you experience weird behaviour of your game after hot reloading, run the
-game in normal (static linking) mode instead. Please report any bugs in the [issue tracker](https://github.com/IThreeM/I3M-Engine-Core/issues) 
+game in normal (static linking) mode instead. Please report any bugs in the [issue tracker](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/issues) 
 of the engine. CHR was tested on two relatively large games - [Fish Folly](https://github.com/mrDIMAS/FishFolly) and 
 [Station Iapetus](https://github.com/mrDIMAS/StationIapetus). You can download these projects and try CHR yourself.
 

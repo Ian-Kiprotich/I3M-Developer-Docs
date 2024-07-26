@@ -4,11 +4,11 @@ members = ["editor", "executor", "game"]
 resolver = "2"
 
 [workspace.dependencies.i3m]
-git = "https://github.com/IThreeM/I3M-Engine-Core"
+git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git"
 rev = "63017992a1fae61d88bd8cb0025ebf9ec727486d"
 
 [workspace.dependencies.i3m_engine_core_base]
-git = "https://github.com/IThreeM/I3M-Engine-Core"
+git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git"
 rev = "63017992a1fae61d88bd8cb0025ebf9ec727486d"
 
 # Optimize the engine in debug builds, but leave project's code non-optimized.

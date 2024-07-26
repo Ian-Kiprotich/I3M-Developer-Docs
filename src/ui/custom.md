@@ -94,5 +94,5 @@ being used.
 
 ## Source Code and Web Demo
 
-Full source code for this chapter can be found [here](https://github.com/IThreeM/I3M-Engine-Core-demo-projects/blob/main/ui/game/src/custom.rs)
+Full source code for this chapter can be found [here](ssh://git@github.com/IThreeM/I3M-Engine-Core.git-demo-projects/blob/main/ui/game/src/custom.rs)
 , and you can also run [web demo](https://ithreem.com/assets/demo/ui/index.html) to see it in action.

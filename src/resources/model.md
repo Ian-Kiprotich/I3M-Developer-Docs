@@ -5,7 +5,7 @@
 I3M supports these file formats for 3D models:
 
 - FBX - standard game development industry 3D model exchange format
-- RGS - native scenes format produced by Fyroxed (the editor)
+- RGS - native scenes format produced by I3M (the editor)
 
 The list could be extended in the future.
 

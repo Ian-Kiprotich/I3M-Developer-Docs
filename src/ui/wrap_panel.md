@@ -20,6 +20,6 @@ the panel to switch orientation to desired.
 
 ## Use cases
 
-One of many use case examples could be picture gallery, or asset browser in the Fyroxed:
+One of many use case examples could be picture gallery, or asset browser in the I3M:
 
 ![wrap panel](wrap_panel.png)

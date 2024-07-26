@@ -19,7 +19,7 @@ get correct version automatically. Preprocessing is needed because the same shad
 and WebGL (OpenGL ES) which have some differences.
 2) There is a "standard" library of useful methods which is automatically included in every shader source
 at preprocessing stage. The library source could be found
-[here](https://github.com/IThreeM/I3M-Engine-Core/blob/master/src/renderer/framework/shaders/shared.glsl). It 
+[here](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/blob/master/src/renderer/framework/shaders/shared.glsl). It 
 is well documented, and you may find some functions useful for you job.
 
 ## Structure
@@ -80,12 +80,12 @@ Shader has rigid structure that could be described in this code snippet:
                 r#"
                 layout(location = 0) in vec3 vertexPosition;
                 layout(location = 1) in vec2 vertexTexCoord;
-                uniform mat4 fyrox_worldViewProjection;
+                uniform mat4 i3m_worldViewProjection;
                 out vec2 texCoord;
                 void main()
                 {
                     texCoord = vertexTexCoord;
-                    gl_Position = fyrox_worldViewProjection * vertexPosition;
+                    gl_Position = i3m_worldViewProjection * vertexPosition;
                 }
                 "#;
             // Pixel shader code.
@@ -138,33 +138,33 @@ in your shader:
 
 | Name                       | Type         | Description                                                                                                                                                  |
 |----------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fyrox_worldMatrix          | `mat4`       | Local-to-world transformation.                                                                                                                               |
-| fyrox_worldViewProjection  | `mat4`       | Local-to-clip-space transform.                                                                                                                               |
-| fyrox_boneMatrices         | `sampler2D`  | Array of bone matrices packed into a texture. Use `S_FetchMatrix` built-in method to fetch a matrix by its index.                                            |
-| fyrox_useSkeletalAnimation | `bool`       | Whether skinned meshes is rendering or not.                                                                                                                  |
-| fyrox_cameraPosition       | `vec3`       | Position of the camera in world coordinates.                                                                                                                 |
-| fyrox_cameraUpVector       | `vec3`       | Up vector of the camera in world coordinates.                                                                                                                |
-| fyrox_cameraSideVector     | `vec3`       | Side vector of the camera in world coordinates.                                                                                                              |
-| fyrox_zNear                | `float`      | Near clipping plane of the camera.                                                                                                                           |
-| fyrox_zFar                 | `float`      | Far clipping plane of the camera.                                                                                                                            |
-| fyrox_sceneDepth           | `sampler2D`  | 2D texture with the depth values of the scene. Available only after GBuffer pass.                                                                            |
-| fyrox_usePOM               | `bool`       | Whether to use parallax mapping or not.                                                                                                                      |
-| fyrox_blendShapesStorage   | `sampler3D`  | 3D texture of layered blend shape storage. Use `S_FetchBlendShapeOffsets` built-in method to fetch info.                                                     | 
-| fyrox_blendShapesWeights   | `float[128]` | Weights of all available blend shapes.                                                                                                                       | 
-| fyrox_blendShapesCount     | `int`        | Total amount of blend shapes.                                                                                                                                |
-| fyrox_lightPosition        | `vec3`       | Light position on world coordinates.                                                                                                                         |
-| fyrox_lightCount           | `int`        | Total light count participating in the rendering. Available in forward render pass only.                                                                     |
-| fyrox_lightsColorRadius    | `vec4[16]`   | `xyz` - RGB color of the light, `a` - effective radius of the light. Available in forward render pass only.                                                  |
-| fyrox_lightsPosition       | `vec3[16]`   | Array of world-space positions of the lights participating in the rendering. Available in forward render pass only.                                          |
-| fyrox_lightsDirection      | `vec3[16]`   | Array of directions (world-space) of the lights participating in the rendering. Available in forward render pass only.                                       |
-| fyrox_lightsParameters     | `vec2[16]`   | Array of parameters of lights participating in the rendering, where `x` - hotspot angle, `y` - full cone angle delta. Available in forward render pass only. |
-| fyrox_ambientLight         | `vec4`       | Ambient lighting.                                                                                                                                            |
+| i3m_worldMatrix          | `mat4`       | Local-to-world transformation.                                                                                                                               |
+| i3m_worldViewProjection  | `mat4`       | Local-to-clip-space transform.                                                                                                                               |
+| i3m_boneMatrices         | `sampler2D`  | Array of bone matrices packed into a texture. Use `S_FetchMatrix` built-in method to fetch a matrix by its index.                                            |
+| i3m_useSkeletalAnimation | `bool`       | Whether skinned meshes is rendering or not.                                                                                                                  |
+| i3m_cameraPosition       | `vec3`       | Position of the camera in world coordinates.                                                                                                                 |
+| i3m_cameraUpVector       | `vec3`       | Up vector of the camera in world coordinates.                                                                                                                |
+| i3m_cameraSideVector     | `vec3`       | Side vector of the camera in world coordinates.                                                                                                              |
+| i3m_zNear                | `float`      | Near clipping plane of the camera.                                                                                                                           |
+| i3m_zFar                 | `float`      | Far clipping plane of the camera.                                                                                                                            |
+| i3m_sceneDepth           | `sampler2D`  | 2D texture with the depth values of the scene. Available only after GBuffer pass.                                                                            |
+| i3m_usePOM               | `bool`       | Whether to use parallax mapping or not.                                                                                                                      |
+| i3m_blendShapesStorage   | `sampler3D`  | 3D texture of layered blend shape storage. Use `S_FetchBlendShapeOffsets` built-in method to fetch info.                                                     | 
+| i3m_blendShapesWeights   | `float[128]` | Weights of all available blend shapes.                                                                                                                       | 
+| i3m_blendShapesCount     | `int`        | Total amount of blend shapes.                                                                                                                                |
+| i3m_lightPosition        | `vec3`       | Light position on world coordinates.                                                                                                                         |
+| i3m_lightCount           | `int`        | Total light count participating in the rendering. Available in forward render pass only.                                                                     |
+| i3m_lightsColorRadius    | `vec4[16]`   | `xyz` - RGB color of the light, `a` - effective radius of the light. Available in forward render pass only.                                                  |
+| i3m_lightsPosition       | `vec3[16]`   | Array of world-space positions of the lights participating in the rendering. Available in forward render pass only.                                          |
+| i3m_lightsDirection      | `vec3[16]`   | Array of directions (world-space) of the lights participating in the rendering. Available in forward render pass only.                                       |
+| i3m_lightsParameters     | `vec2[16]`   | Array of parameters of lights participating in the rendering, where `x` - hotspot angle, `y` - full cone angle delta. Available in forward render pass only. |
+| i3m_ambientLight         | `vec4`       | Ambient lighting.                                                                                                                                            |
 
 To use any of the properties, just define a uniform with an appropriate name:
 
 ```glsl
-uniform mat4 fyrox_worldMatrix;
-uniform vec3 fyrox_cameraPosition;
+uniform mat4 i3m_worldMatrix;
+uniform vec3 i3m_cameraPosition;
 ```
 
 This list will be extended in future releases.
@@ -228,11 +228,11 @@ in clipping space. In other words it has to do at least this:
 ```glsl
 layout(location = 0) in vec3 vertexPosition;
 
-uniform mat4 fyrox_worldViewProjection; // Note the built-in variable.
+uniform mat4 i3m_worldViewProjection; // Note the built-in variable.
 
 void main()
 {
-    gl_Position = fyrox_worldViewProjection * vertexPosition;
+    gl_Position = i3m_worldViewProjection * vertexPosition;
 }
 ```
 

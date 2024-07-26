@@ -12,11 +12,11 @@ more or less complex games.
 
 ## How to create
 
-A scene could be created either in FyroxEd or programmatically. You can also combine both approaches, where
+A scene could be created either in I3M or programmatically. You can also combine both approaches, where
 you build all "static" content in the editor and adding rest of the entities (bots, interactive objects, etc.)
 manually by instantiating respective prefabs at runtime.
 
-### Using FyroxEd
+### Using I3M
 
 There is a [separate chapter](../beginning/editor_overview.md) in the book that should help you to create a
 scene. After a scene is created, you can load it using async scene loader:

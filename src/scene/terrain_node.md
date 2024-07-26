@@ -223,5 +223,5 @@ millisecond on average low-to-middle-end GPU.
 ## Limitations and known issues
 
 There is no way to cut holes in the terrain yet, it makes impossible to create caves. There is also no way to create 
-ledges, use separate meshes to imitate this. See [tracking issue](https://github.com/IThreeM/I3M-Engine-Core/issues/351) for
+ledges, use separate meshes to imitate this. See [tracking issue](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/issues/351) for
 more info.
