@@ -744,7 +744,7 @@ name = "editor"
 version = "0.1.0"
 dependencies = [
  "i3m",
- "fyroxed_base",
+ "i3m_engine_core_base",
  "platformer",
 ]
 
@@ -1177,7 +1177,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "fyroxed_base"
+name = "i3m_engine_core_base"
 version = "0.21.0"
 source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=63017992a1fae61d88bd8cb0025ebf9ec727486d#63017992a1fae61d88bd8cb0025ebf9ec727486d"
 dependencies = [

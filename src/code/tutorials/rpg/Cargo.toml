@@ -7,7 +7,7 @@ resolver = "2"
 git = "https://github.com/IThreeM/I3M-Engine-Core"
 rev = "2396589822b69a672cc0215d94dc6c5c4ba3b217"
 
-[workspace.dependencies.fyroxed_base]
+[workspace.dependencies.i3m_engine_core_base]
 git = "https://github.com/IThreeM/I3M-Engine-Core"
 rev = "2396589822b69a672cc0215d94dc6c5c4ba3b217"
 

@@ -1091,138 +1091,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "i3m"
-version = "0.34.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "i3m-impl",
-]
-
-[[package]]
-name = "i3m-animation"
-version = "0.2.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "fxhash",
- "i3m-core",
- "spade",
- "strum",
- "strum_macros",
-]
-
-[[package]]
-name = "i3m-book-code"
-version = "0.1.0"
-dependencies = [
- "i3m",
- "fyroxed_base",
- "strum",
- "strum_macros",
-]
-
-[[package]]
-name = "i3m-core"
-version = "0.28.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "android-activity",
- "arrayvec",
- "base64 0.22.1",
- "bincode",
- "bitflags 2.6.0",
- "bytemuck",
- "byteorder",
- "futures",
- "fxhash",
- "i3m-core-derive",
- "i3m-math 0.2.0",
- "instant",
- "js-sys",
- "lazy_static",
- "memoffset",
- "nalgebra",
- "notify",
- "num-traits",
- "once_cell",
- "parking_lot",
- "rand",
- "serde",
- "uuid",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "web-sys",
-]
-
-[[package]]
-name = "i3m-core-derive"
-version = "0.23.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "convert_case",
- "darling",
- "fxhash",
- "proc-macro2",
- "quote",
- "syn 1.0.109",
-]
-
-[[package]]
-name = "i3m-graph"
-version = "0.1.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "fxhash",
- "i3m-core",
- "i3m-resource",
-]
-
-[[package]]
-name = "i3m-impl"
-version = "0.34.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "base64 0.22.1",
- "bitflags 2.6.0",
- "bytemuck",
- "clap",
- "ddsfile",
- "fast_image_resize",
- "fxhash",
- "i3m-animation",
- "i3m-core",
- "i3m-core-derive",
- "i3m-graph",
- "i3m-resource",
- "i3m-sound",
- "i3m-ui",
- "glow",
- "glutin",
- "glutin-winit",
- "half",
- "hashbrown",
- "image",
- "imageproc",
- "inflate",
- "lazy_static",
- "libloading",
- "lightmap",
- "rapier2d",
- "rapier3d",
- "raw-window-handle 0.5.2",
- "rayon",
- "ron",
- "serde",
- "serde-wasm-bindgen",
- "strum",
- "strum_macros",
- "tbc",
- "uvgen",
- "walkdir",
- "winit",
-]
-
-[[package]]
-name = "i3m-math"
+name = "fyrox-math"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4811e6142fd4c525f171e0851503afc57de4d81a02201e33b630de536bc1bf26"
@@ -1232,90 +1101,6 @@ dependencies = [
  "num-traits",
  "rectutils 0.1.0",
  "uuid",
-]
-
-[[package]]
-name = "i3m-math"
-version = "0.2.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "arrayvec",
- "bytemuck",
- "nalgebra",
- "num-traits",
- "rectutils 0.2.0",
- "uuid",
-]
-
-[[package]]
-name = "i3m-resource"
-version = "0.12.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "fxhash",
- "i3m-core",
- "rayon",
- "ron",
- "serde",
- "walkdir",
-]
-
-[[package]]
-name = "i3m-sound"
-version = "0.35.0"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "i3m-core",
- "i3m-resource",
- "hound",
- "hrtf",
- "lewton",
- "ogg",
- "serde",
- "strum",
- "strum_macros",
- "tinyaudio",
-]
-
-[[package]]
-name = "i3m-ui"
-version = "0.25.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "bytemuck",
- "copypasta",
- "fontdue",
- "fxhash",
- "i3m-animation",
- "i3m-core",
- "i3m-graph",
- "i3m-resource",
- "lazy_static",
- "notify",
- "serde",
- "strum",
- "strum_macros",
- "sysinfo",
-]
-
-[[package]]
-name = "fyroxed_base"
-version = "0.21.1"
-source = "git+https://github.com/IThreeM/I3M-Engine-Core?rev=c865306042407c686cf53c83c7d9c2471a460b3e#c865306042407c686cf53c83c7d9c2471a460b3e"
-dependencies = [
- "cargo_metadata",
- "i3m",
- "image",
- "imageproc",
- "lazy_static",
- "open",
- "ron",
- "rust-fuzzy-search",
- "serde",
- "serde_json",
- "strum",
- "strum_macros",
- "toml",
 ]
 
 [[package]]
@@ -1499,6 +1284,221 @@ dependencies = [
  "byteorder",
  "rubato",
  "rustfft",
+]
+
+[[package]]
+name = "i3m"
+version = "0.34.1"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "i3m-impl",
+]
+
+[[package]]
+name = "i3m-animation"
+version = "0.2.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "fxhash",
+ "i3m-core",
+ "spade",
+ "strum",
+ "strum_macros",
+]
+
+[[package]]
+name = "i3m-book-code"
+version = "0.1.0"
+dependencies = [
+ "i3m",
+ "i3m_engine_core_base",
+ "strum",
+ "strum_macros",
+]
+
+[[package]]
+name = "i3m-core"
+version = "0.28.1"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "android-activity",
+ "arrayvec",
+ "base64 0.22.1",
+ "bincode",
+ "bitflags 2.6.0",
+ "bytemuck",
+ "byteorder",
+ "futures",
+ "fxhash",
+ "i3m-core-derive",
+ "i3m-math",
+ "instant",
+ "js-sys",
+ "lazy_static",
+ "memoffset",
+ "nalgebra",
+ "notify",
+ "num-traits",
+ "once_cell",
+ "parking_lot",
+ "rand",
+ "serde",
+ "uuid",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "web-sys",
+]
+
+[[package]]
+name = "i3m-core-derive"
+version = "0.23.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "convert_case",
+ "darling",
+ "fxhash",
+ "proc-macro2",
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "i3m-graph"
+version = "0.1.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "fxhash",
+ "i3m-core",
+ "i3m-resource",
+]
+
+[[package]]
+name = "i3m-impl"
+version = "0.34.1"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "base64 0.22.1",
+ "bitflags 2.6.0",
+ "bytemuck",
+ "clap",
+ "ddsfile",
+ "fast_image_resize",
+ "fxhash",
+ "glow",
+ "glutin",
+ "glutin-winit",
+ "half",
+ "hashbrown",
+ "i3m-animation",
+ "i3m-core",
+ "i3m-core-derive",
+ "i3m-graph",
+ "i3m-resource",
+ "i3m-sound",
+ "i3m-ui",
+ "image",
+ "imageproc",
+ "inflate",
+ "lazy_static",
+ "libloading",
+ "lightmap",
+ "rapier2d",
+ "rapier3d",
+ "raw-window-handle 0.5.2",
+ "rayon",
+ "ron",
+ "serde",
+ "serde-wasm-bindgen",
+ "strum",
+ "strum_macros",
+ "tbc",
+ "uvgen",
+ "walkdir",
+ "winit",
+]
+
+[[package]]
+name = "i3m-math"
+version = "0.2.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "arrayvec",
+ "bytemuck",
+ "nalgebra",
+ "num-traits",
+ "rectutils 0.2.0",
+ "uuid",
+]
+
+[[package]]
+name = "i3m-resource"
+version = "0.12.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "fxhash",
+ "i3m-core",
+ "rayon",
+ "ron",
+ "serde",
+ "walkdir",
+]
+
+[[package]]
+name = "i3m-sound"
+version = "0.35.0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "hound",
+ "hrtf",
+ "i3m-core",
+ "i3m-resource",
+ "lewton",
+ "ogg",
+ "serde",
+ "strum",
+ "strum_macros",
+ "tinyaudio",
+]
+
+[[package]]
+name = "i3m-ui"
+version = "0.25.1"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "bytemuck",
+ "copypasta",
+ "fontdue",
+ "fxhash",
+ "i3m-animation",
+ "i3m-core",
+ "i3m-graph",
+ "i3m-resource",
+ "lazy_static",
+ "notify",
+ "serde",
+ "strum",
+ "strum_macros",
+ "sysinfo",
+]
+
+[[package]]
+name = "i3m_engine_core_base"
+version = "0.21.1"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+dependencies = [
+ "cargo_metadata",
+ "i3m",
+ "image",
+ "imageproc",
+ "lazy_static",
+ "open",
+ "ron",
+ "rust-fuzzy-search",
+ "serde",
+ "serde_json",
+ "strum",
+ "strum_macros",
+ "toml",
 ]
 
 [[package]]
@@ -1836,7 +1836,7 @@ checksum = "1cbfbe5e3b568920f20dbfa053810bc6d1be08aa96d077c2509da1c9be2217ee"
 dependencies = [
  "arrayvec",
  "fxhash",
- "i3m-math 0.1.0",
+ "fyrox-math",
  "nalgebra",
  "rayon",
  "uvgen",

@@ -1,6 +1,6 @@
 //! Editor with your game connected to it as a plugin.
 use i3m::event_loop::EventLoop;
-use fyroxed_base::{Editor, StartupData};
+use i3m_engine_core_base::{Editor, StartupData};
 use rpg::Game;
 
 fn main() {

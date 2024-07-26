@@ -6,5 +6,5 @@ edition = "2021"
 
 [dependencies]
 i3m = {workspace = true}
-fyroxed_base = {workspace = true}
+i3m_engine_core_base = {workspace = true}
 fps = { path = "../game" }

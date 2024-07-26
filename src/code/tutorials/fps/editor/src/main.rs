@@ -1,7 +1,7 @@
 //! Editor with your game connected to it as a plugin.
 use fps::Game;
 use i3m::event_loop::EventLoop;
-use fyroxed_base::{Editor, StartupData};
+use i3m_engine_core_base::{Editor, StartupData};
 
 fn main() {
     let event_loop = EventLoop::new().unwrap();

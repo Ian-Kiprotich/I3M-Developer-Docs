@@ -19,8 +19,8 @@ use i3m::{
         TypeUuidProvider,
     },
 };
-use fyroxed_base::inspector::editors::resource::ResourceFieldPropertyEditorDefinition;
-use fyroxed_base::Editor;
+use i3m_engine_core_base::inspector::editors::resource::ResourceFieldPropertyEditorDefinition;
+use i3m_engine_core_base::Editor;
 use std::error::Error;
 use std::sync::Arc;
 use std::{
@@ -114,17 +114,9 @@ fn main() {
     let editor = Editor::new(None);
 
     // Register property editor.
+    let sender = editor.message_sender.clone(); // Get the message sender
     editor.inspector.property_editors.insert(
-        ResourceFieldPropertyEditorDefinition::<CustomResource>::new(
-            Arc::new(Mutex::new(
-                |resource_manager: &ResourceManager, path: &Path| {
-                    resource_manager
-                        .try_request::<CustomResource>(path)
-                        .map(block_on)
-                },
-            )),
-            editor.message_sender.clone(),
-        ),
+        ResourceFieldPropertyEditorDefinition::<CustomResource>::new(sender),
     );
 
     // ...

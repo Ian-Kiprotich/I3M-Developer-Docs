@@ -7,4 +7,4 @@ edition = "2021"
 [dependencies]
 platformer = { path = "../game" }
 i3m = {workspace = true}
-fyroxed_base = {workspace = true}
+i3m_engine_core_base = {workspace = true}

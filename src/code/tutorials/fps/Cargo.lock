@@ -745,7 +745,7 @@ version = "0.1.0"
 dependencies = [
  "fps",
  "i3m",
- "fyroxed_base",
+ "i3m_engine_core_base",
 ]
 
 [[package]]
@@ -1200,7 +1200,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "fyroxed_base"
+name = "i3m_engine_core_base"
 version = "0.20.1"
 source = "git+https://github.com/IThreeM/I3M-Engine-Core#2396589822b69a672cc0215d94dc6c5c4ba3b217"
 dependencies = [

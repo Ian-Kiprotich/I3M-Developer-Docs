@@ -6,7 +6,7 @@ use i3m::{
     core::reflect::prelude::*, core::type_traits::prelude::*,
     gui::inspector::editors::inspectable::InspectablePropertyEditorDefinition,
 };
-use fyroxed_base::Editor;
+use i3m_engine_core_base::Editor;
 use strum_macros::{AsRefStr, EnumString, VariantNames};
 
 // ANCHOR: add_property_editor

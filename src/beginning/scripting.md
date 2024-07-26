@@ -130,7 +130,7 @@ This will ensure you're using the latest project/script template generator, whic
 of the template generator will most likely generate outdated code, no longer be compatible with the engine.
 
 To switch existing projects to the latest version of the engine, you need to specify paths pointing to the remote repository 
-for the `i3m` and `fyroxed_base` dependencies. You need to do this in the `game`, `executor`, and `editor` projects. First,
+for the `i3m` and `i3m_engine_core_base` dependencies. You need to do this in the `game`, `executor`, and `editor` projects. First,
 open `game/Cargo.toml` and change the `i3m` dependency to the following:
 
 ```toml
@@ -138,13 +138,13 @@ open `game/Cargo.toml` and change the `i3m` dependency to the following:
 i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
 ```
 
-Do the same for `executor/Cargo.toml`. The `editor` has two dependencies we need to change: `i3m` and `fyroxed_base`.
+Do the same for `executor/Cargo.toml`. The `editor` has two dependencies we need to change: `i3m` and `i3m_engine_core_base`.
 Open the `editor/Cargo.toml` and set both dependencies to the following:
 
 ```toml
 [dependencies]
 i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
-fyroxed_base = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
+i3m_engine_core_base = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
 ```
 
 Now your game will use the latest engine and editor, but beware - new commits could bring some API breaks. You can avoid these by 
@@ -153,7 +153,7 @@ specifying a particular commit, just add `rev = "desired_commit_hash"` to every 
 ```toml
 [dependencies]
 i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
-fyroxed_base = { git = "https://github.com/IThreeM/I3M-Engine-Core", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
+i3m_engine_core_base = { git = "https://github.com/IThreeM/I3M-Engine-Core", rev = "0195666b30562c1961a9808be38b5e5715da43af" }
 ```
 
 To bring a local git repository of the engine to being up-to-date, just call `cargo update` at the root of the project's
