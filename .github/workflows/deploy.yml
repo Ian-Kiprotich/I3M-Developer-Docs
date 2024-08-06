@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -19,11 +19,11 @@ jobs:
         with:
           mdbook-version: 'latest'
 
-      - run: mdbook build
+      - name: Build the book
+        run: mdbook build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.I3M_TOKEN }}
           publish_dir: ./book

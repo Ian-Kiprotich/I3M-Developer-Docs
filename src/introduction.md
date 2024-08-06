@@ -1,6 +1,6 @@
 IThreeM Developer Docs Book
 
-Practical reference and user guides for [Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [I3M](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/tree/master/editor).
+Practical reference and user guides for [Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [I3M](ssh://git@github.com/IThreeM/I3M-Engine-Core.git/tree/main/editor).
 
 > ⚠️ Tip: If you want to start using the engine as fast as possible - read this [chapter](./beginning/scripting.md).
 
@@ -30,9 +30,3 @@ The book is primarily focused on game development with I3M, not on its API. You 
 We're expecting that you know basics of Rust programming language, its package manager Cargo. It is also necessary
 to know the _basics_ of the game development, linear algebra, principles of software development and patterns,
 otherwise the book will probably be very hard for you.
-
-## Support the development
-
-The future of the project fully depends on community support, every bit is important!
-
-[![Become a patron!](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/mrdimas)

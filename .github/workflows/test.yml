@@ -17,14 +17,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Update
-        run: sudo apt update
+      - name: Install Rustup
+        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        shell: bash
 
       - name: Update Rust
         run: rustup update
+        shell: bash
 
       - name: Install Dependencies
-        run: sudo apt-get install libasound2-dev libudev-dev pkg-config xorg-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev
+        run: sudo apt-get install -y libasound2-dev libudev-dev pkg-config xorg-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev
 
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
