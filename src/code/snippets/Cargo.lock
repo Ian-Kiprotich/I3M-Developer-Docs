@@ -1289,7 +1289,7 @@ dependencies = [
 [[package]]
 name = "i3m"
 version = "0.34.1"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "i3m-impl",
 ]
@@ -1297,7 +1297,7 @@ dependencies = [
 [[package]]
 name = "i3m-animation"
 version = "0.2.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1319,7 +1319,7 @@ dependencies = [
 [[package]]
 name = "i3m-core"
 version = "0.28.1"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "android-activity",
  "arrayvec",
@@ -1352,7 +1352,7 @@ dependencies = [
 [[package]]
 name = "i3m-core-derive"
 version = "0.23.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "convert_case",
  "darling",
@@ -1365,7 +1365,7 @@ dependencies = [
 [[package]]
 name = "i3m-graph"
 version = "0.1.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1375,7 +1375,7 @@ dependencies = [
 [[package]]
 name = "i3m-impl"
 version = "0.34.1"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "base64 0.22.1",
  "bitflags 2.6.0",
@@ -1420,7 +1420,7 @@ dependencies = [
 [[package]]
 name = "i3m-math"
 version = "0.2.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "arrayvec",
  "bytemuck",
@@ -1433,7 +1433,7 @@ dependencies = [
 [[package]]
 name = "i3m-resource"
 version = "0.12.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "fxhash",
  "i3m-core",
@@ -1446,7 +1446,7 @@ dependencies = [
 [[package]]
 name = "i3m-sound"
 version = "0.35.0"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "hound",
  "hrtf",
@@ -1463,7 +1463,7 @@ dependencies = [
 [[package]]
 name = "i3m-ui"
 version = "0.25.1"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "bytemuck",
  "copypasta",
@@ -1484,7 +1484,7 @@ dependencies = [
 [[package]]
 name = "i3m_engine_core_base"
 version = "0.21.1"
-source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0#ef943bc89a39d10325d16cb7ae4e05e0cf3ba7a0"
+source = "git+ssh://git@github.com/IThreeM/I3M-Engine-Core.git?rev=5bece676faef025c2fbed1ab0192b6c00e12cc07#5bece676faef025c2fbed1ab0192b6c00e12cc07"
 dependencies = [
  "cargo_metadata",
  "i3m",
