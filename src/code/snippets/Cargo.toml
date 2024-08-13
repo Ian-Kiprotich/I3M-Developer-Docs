@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-i3m = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git", rev = "5bece676faef025c2fbed1ab0192b6c00e12cc07" }
-i3m_engine_core_base = { git = "ssh://git@github.com/IThreeM/I3M-Engine-Core.git", rev = "5bece676faef025c2fbed1ab0192b6c00e12cc07" }
+i3m = "0.34.1"
+i3m_engine_core_base = "0.21.2"
 strum = "0.26.0"
 strum_macros = "0.26.0"
